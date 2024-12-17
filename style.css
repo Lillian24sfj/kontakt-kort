@@ -5,9 +5,103 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
   display: flex;
-  background-color: #f0ded0;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+h1 {
+  color: #464444;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+#profilbilde {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: solid 2px #464444;
+}
+
+#kontakt {
+  max-width: 400px;
+  height: auto;
+  background-image: url(./gold-glitter-pink-watercolor-background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  /* margin: 16px; */
+  /* flex-wrap: wrap; */
+}
+
+nav {
+  color: #464444;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+nav #phone,
+nav #mail,
+nav #location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* align-self: start; */
+  /* justify-content: space-between; */
+  font-weight: 550;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: auto;
+}
+
+nav a {
+  color: #464444;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#rightside {
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  #kontakt {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  /* #profilbilde {
+    align-self: center;
+    justify-self: center;
+  } */
+
+  #rightside {
+    justify-content: center;
+    align-items: center;
+  }
 }
